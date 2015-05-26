@@ -67,8 +67,8 @@ public:
 		int index = this->hash(key);
 		if(m_buckets[index] == NULL){
 			HashTableNode<K, V>* node = new HashTableNode<K, V>(key, value);
-			node->mKey = key;
-			node->mValue = value;
+//			node->mKey = key;
+//			node->mValue = value;
 			m_buckets[index] = node;
 		} else {
 			HashTableNode<K, V> *currNode = m_buckets[index];
@@ -118,22 +118,28 @@ public:
 	
 	bool remove(const K& key){
 		int index = hash(key);
-		HashTableNode<K, V>* node = m_buckets[index];
-		if(node == NULL)
+		
+		if(m_buckets[index] == NULL)
 			return false;
 		
-		if(node->mKey == key){ // head
+		if(m_buckets[index]->mKey == key){ // head
+			HashTableNode<K, V>* node = m_buckets[index];
 			m_buckets[index] = m_buckets[index]->mNext;
 			delete node;
+			
 			return true;
 		} else {
-			HashTableNode<K, V>* currNode = node->mNext;
+			HashTableNode<K, V>* currNode = m_buckets[index]->mNext;
+			HashTableNode<K, V>* prevNode = m_buckets[index];
 			while(currNode != NULL){
 				if(currNode->mKey == key){
-					m_buckets[index] = currNode->mNext;
+					prevNode->mNext = currNode->mNext;
+					delete currNode; // deleting the node
+					
 					return true;
 				}
 				currNode = currNode->mNext;
+				prevNode = prevNode->mNext;
 			}
 		}
 		

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>57451307-4765-43DD-9599-87422D45433F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HashMap</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>21061D07985F31E4E48397E705A87B9CCE2FCB93</key>
+		<string>https://github.com/aftabnaqvi/Simple-Template-based-HashMap-implementation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HashMap.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>21061D07985F31E4E48397E705A87B9CCE2FCB93</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/aftabnaqvi/Simple-Template-based-HashMap-implementation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>21061D07985F31E4E48397E705A87B9CCE2FCB93</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>21061D07985F31E4E48397E705A87B9CCE2FCB93</string>
+			<key>IDESourceControlWCCName</key>
+			<string>HashMap</string>
+		</dict>
+	</array>
+</dict>
+</plist>

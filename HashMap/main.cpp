@@ -33,7 +33,7 @@ int main(int argc, const char * argv[]) {
 	node3.mValue = "SugarSync";
 	table.insert(r3, "SugarSync");
 	
-	table.remove(r);
+	table.remove(r2);
 	
 	cout<<"exists: "<<table.exists(r3)<<endl;
 	
@@ -41,8 +41,8 @@ int main(int argc, const char * argv[]) {
 	HashTableNode<Record, string> node5(r5, "Gilroy");
 	
 	cout<<"exists: "<<table.exists(r5)<<endl;
-	
-	cout<<"Value: "<<table.Value(r3)<<endl;
+	table.insert(r5, "SugarSync11111");
+	cout<<"Value: "<<table.Value(r5)<<endl;
 	
 	
     return 0;
